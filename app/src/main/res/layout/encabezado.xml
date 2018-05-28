@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/encabezado">
+
+    <TextView
+        android:id="@+id/ds_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AA"
+        android:textColor="@color/negro"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/carga_util"
+        android:layout_alignStart="@+id/carga_util" />
+
+    <TextView
+        android:id="@+id/etiqueta_flujo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AAAAA"
+        android:textColor="@color/negro"
+        android:layout_marginRight="142dp"
+        android:layout_marginEnd="142dp"
+        android:layout_alignBaseline="@+id/ds_head"
+        android:layout_alignBottom="@+id/ds_head"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/carga_util"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AAAA"
+        android:textColor="@color/negro"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_below="@+id/ds_head"
+        android:layout_alignLeft="@+id/dir_destino"
+        android:layout_alignStart="@+id/dir_destino" />
+
+    <TextView
+        android:id="@+id/sig_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AA"
+        android:textColor="@color/negro"
+        android:layout_alignBaseline="@+id/carga_util"
+        android:layout_alignBottom="@+id/carga_util"
+        android:layout_toLeftOf="@+id/etiqueta_flujo"
+        android:layout_toStartOf="@+id/etiqueta_flujo" />
+
+    <TextView
+        android:id="@+id/lim_saltos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AA"
+        android:textColor="@color/negro"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_above="@+id/dir_destino"
+        android:layout_alignRight="@+id/dir_destino"
+        android:layout_alignEnd="@+id/dir_destino"
+        android:layout_alignTop="@+id/sig_head" />
+
+    <TextView
+        android:id="@+id/dir_fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA"
+        android:textColor="@color/negro"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/dir_destino"
+        android:layout_alignStart="@+id/dir_destino" />
+
+    <TextView
+        android:id="@+id/dir_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA"
+        android:textColor="@color/negro"
+        android:layout_below="@+id/carga_util"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+</RelativeLayout>
